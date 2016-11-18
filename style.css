@@ -287,6 +287,11 @@ footer span {
     margin-left: 15px;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
 /*slider*/
 #slider {
     position: relative;

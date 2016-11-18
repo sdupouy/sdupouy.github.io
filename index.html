@@ -1,36 +1,114 @@
+<!DOCTYPE html>
+
 <html>
-	<head>
-		<title>slider-test</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+<head>
 
-	<body>
-		<div id="slider">
+	<title>Simon Dupouy</title>
 
-		<div id="s1">
-		<div id="s2">
-		<div id="s3">
+	<meta name="description" content="Le site personnel de Simon Dupouy"> 
+	<meta name="keywords" content="Simon, simon, Dupouy, dupouy, site perso, hack club, Magendie, Bordeaux, science"> 
+	<meta name="author" content="Simon DUPOUY"> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="images/icone-simon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-		<div id="content">
-			<div id="div1" class="slide">
-				<p>Paragraphe test de la div 1</p>
-				<a href="#s2">next</a>
-			</div>
-			<div id="div2" class="slide">
-				<p>Paragraphe test de la div 2</p>
-				<a href="#s1">prev</a>
-				<a href="#s3">next</a>
-			</div>
-			<div id="div3" class="slide">
-				<p>Paragraphe test de la div 3</p>
-				<a href="#s2">prev</a>
-			</div>
-		</div>
+</head>
 
-		</div>
-		</div>
-		</div>
-
-		</div>
-	</body>
+<body>
+    
+    <div id="slider">
+    
+    <div id="s1">
+    <div id="s2">
+    	<div id="content">
+    		<div id="part1" class="slide">
+	    		<main>
+	    			<div id="banderole">
+    					<img src="images/simon-rond-gris2.png" id="mainPhoto">
+	    				<div id="description">
+	    					<p id="descr1">Welcome on my personal website !</p>
+	    					<p id="descr2">My name is Simon Henri Dupouy</br>&nbsp;and I am a high-school student</br>&nbsp;&nbsp;from Bordeaux, France.</p>
+	    					<p id="descr3">I am passionate about science,</br>coding and design.</p>
+	    					<p id="descr4">&nbsp;I hope this website will allow you</br>to know me better.</p>
+	    					<p id="descr5">Thanks for the visit !</p>
+	    				</div>
+	    				<div id="fleche-descr" onclick="showDetail()"><img src="images/triangle-blanc.png"></div>
+	    			</div>
+	    			<h1 id="name">Simon Dupouy</h1>
+    			</main>
+    			
+    			<a id="fleche" href="#s2"><img src="images/fleche-bas-blanche.png"></a>
+    		</div>
+    		
+    		<div id="part2" class="slide">
+    			<!--<header>
+    				<img src="images/simon-small.png">
+    				<address>Simon DUPOUY - <a href="mailto:simon.dupouy@gmail.com" target="_blank">simon.dupouy@gmail.com</a></address>
+    			</header>-->
+    			<a id="fleche2" href="#s1"><img src="images/fleche-haut-blanche.png"></a>
+    			<div id="secCont">
+    				<div class="section">
+    					<div class="contImg"><img src="images/code.png" id="code" alt="code"></div>
+    					<p>
+    						I have always been attracted by coding. I discovered Java in 2014,
+    						then web technologies (HTML, CSS, PHP, SQL, JS...), then Python 3.
+    						I have been selected in national semi-finals at
+    						<a href="https://prologin.org/" target="_blank">Prologin</a>
+    						2015 and at <a href="http://www.france-ioi.org/concours/algorea" target="_blank">Algorea</a>
+    						2016 (algorithmic).
+    						I have recently discovered machine learning and AI, and I wil attend
+    						<a href="https://nips.cc/" target="_blank">NIPS</a> 2016 in Barcelona.
+    						I am co-leader of a <a href="https://hackclub.com/" target="_blank">Hack</a>
+    						Club in Bordeaux and aiming to spread the movement in France.
+    					</p>
+    				</div>
+    				<div class="section">
+    					<div class="contImg"><img src="images/science.png" id="science" alt="science"></div>
+    					<p>
+    						I am passionate about science since a very long time. I am extremely curious
+    						about nearly all that touches to science. Indeed, I am obsessed with physics,
+    						biology, mathematics, geology, astrophysics, chemestry...</br>I love to
+    						be challenged and thus participated in many science contests and events.
+    						I had the opportunity to do a one week internship in an
+    						<a href="http://u1035-inserm.fr/fr/institution" target="_blank">INSERM</a> laboratory
+    						in 2013.
+    					</p>
+    				</div>
+    				<div class="section">
+    					<div class="contImg"><img src="images/jsp.png" id="jsp" alt="JSP"></div>
+    					<p>
+    						I am active and I hate passivity. What I seek above all
+    						is to take part in society and be usefull in some way. For this reason,
+    						I joined in 2012 the french Young Firemen organization
+    						(<a href="http://www.pompiers.fr/grand-public/devenir-sapeur-pompier/jeune-sapeur-pompier" target="_blank">JSP</a>)
+    						in wich I learn first-aid, altruism and efficiency, as well as team-work.
+    						Together, we take several actions such as raising funds for the Telethon
+    						(an association aiming to cure rare deseases).
+    					</p>
+    				</div>
+    			</div>
+    			<footer>
+    				<img src="images/icone-simon.png">
+    				<span>&copy; Simon Dupouy 2016</span>
+    			</footer>
+    		</div>
+    	</div>
+    	
+    	<div id="nav">
+    		<a href="#s1" class="navBtn" id="nav1"></a>
+    		<a href="#s2" class="navBtn" id="nav2"></a>
+    	</div>
+    	
+    </div>
+    </div>
+    
+    </div>
+    
+    <a id="contact" href="mailto:simon.dupouy@gmail.com" target="_blank"><img src="images/mail.png"></a>
+    
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
 </html>
